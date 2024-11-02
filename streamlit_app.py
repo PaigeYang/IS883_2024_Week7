@@ -10,10 +10,6 @@ prompt = st.text_input("Share with us your experience of the latest trip")
 os.environ["OPENAI_API_KEY"] = st.secrets["OpenAIkey"]
 
 
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
-
 ### OpenAI stuff
 client = OpenAI()
 response = client.chat.completions.create(
