@@ -110,5 +110,5 @@ full_chain = {"experience_type": flight_experience_chain, "text": lambda x: x["r
 ### Display
 reply = full_chain.invoke({"request": prompt})
 st.write(
-    reply.content
+    "", reply.content
 )
