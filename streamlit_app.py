@@ -53,7 +53,7 @@ negative_byairline_chain = PromptTemplate.from_template(
     
     Your response should follow these guidelines:
     1. Address the customer directly
-    2. Inform cusomters that customer service will contact them soon to resolve the issue or provide compensation shortly.
+    2. Inform customers that customer service will contact them soon to resolve the issue or provide compensation shortly.
 
 
 Text:
@@ -70,7 +70,7 @@ negative_beyondcontrol_chain = PromptTemplate.from_template(
 
 Your response should follow these guidelines:
     1. Address the customer directly
-    2. Inform cusomters that the airline is not liable in such situations.
+    2. Inform customers that the airline is not liable in such situations.
 
 
 Text:
@@ -109,6 +109,5 @@ full_chain = {"experience_type": flight_experience_chain, "text": lambda x: x["r
 
 ### Display
 reply = full_chain.invoke({"request": prompt})
-st.write(
-    "", reply.content
-)
+st.write( prmopt )
+st.write( reply.content )
